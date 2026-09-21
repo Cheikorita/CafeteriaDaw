@@ -1,0 +1,121 @@
+/* Custom properties para cambiar los colores fácilmente si lo necesitas */
+:root {
+  --rainbow-pink: #ffb7b2;
+  --rainbow-orange: #ffdac1;
+  --rainbow-yellow: #e2f0cb;
+  --rainbow-green: #b5ead7;
+  --rainbow-blue: #c7ceea;
+  --rainbow-purple: #e8d7ff;
+  --text-main: #4a4a4a;
+}
+
+/* Configuración general del cuerpo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-main);
+  background-color: #fafafa;
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Título principal con degradado arcoíris suave */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(
+    45deg, 
+    var(--rainbow-pink), 
+    var(--rainbow-orange), 
+    var(--rainbow-green), 
+    var(--rainbow-blue)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+}
+
+/* Subtítulo con un subrayado grueso en tono verde pastel 
+ me encanta
+ */
+h2 {
+  font-size: 1.8rem;
+  color: #5f6caf;
+  border-bottom: 4px solid var(--rainbow-green);
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+
+/* Tercer nivel con un toque rosa pastel a la izquierda */
+h3 {
+  font-size: 1.4rem;
+  color: #7a6f9b;
+  border-left: 5px solid var(--rainbow-pink);
+  padding-left: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+/* Párrafos limpios y legibles */
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Enlaces con un fondo suave que se intensifica al pasar el cursor */
+a {
+  color: #4b6584;
+  text-decoration: none;
+  background-color: var(--rainbow-orange);
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: var(--rainbow-yellow);
+}
+
+/* Listas con viñetas personalizadas en tonos morados */
+ul {
+  list-style-type: none;
+  padding-left: 1.2rem;
+}
+
+ul li {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+ul li::before {
+  content: "•";
+  color: var(--rainbow-purple);
+  font-size: 1.5rem;
+  position: absolute;
+  left: -1.2rem;
+  top: -0.2rem;
+}
+
+/* Citas de bloque con un fondo completo de arcoíris degradado muy difuminado */
+blockquote {
+  background: linear-gradient(
+    135deg, 
+    rgba(255, 183, 178, 0.15), 
+    rgba(199, 206, 234, 0.15)
+  );
+  border-left: 6px solid var(--rainbow-blue);
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  font-style: italic;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Etiquetas de código resaltadas en azul pastel */
+code {
+  font-family: monospace;
+  background-color: var(--rainbow-blue);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  color: #333;
+}
